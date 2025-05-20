@@ -14,10 +14,10 @@ ActiveRecord::Schema[7.1].define(version: 2025_05_19_204101) do
   create_table "entries", force: :cascade do |t|
     t.string "title"
     t.text "description"
+    t.date "posted_on"
     t.integer "place_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.date "posted_on"
   end
 
   create_table "places", force: :cascade do |t|
